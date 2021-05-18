@@ -1,0 +1,35 @@
+ 
+   <div class="container"  >
+  <div class="row top0 ">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 top1">
+         <div class="container">
+            <div class="row top2 toplo">
+             
+               <div class="col-md-12 " style="padding:4vh">
+                 <h1 class="head0"  >The Bliss</h1>
+                
+
+                 <form class="form0" [formGroup]="signupForm"> 
+  <div class="form-group">
+    <label for="exampleFormControlInput1" class="t1">Email address(required)</label>
+    <input type="email" formControlName="email"class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <p *ngIf="signupForm.controls.email.errors  && (signupForm.controls.email.dirty || signupForm.controls.email.touched)" class="alert alert-info">Please enter valid email address!</p>
+  </div>
+
+  
+  <div class="form-group">
+    <label for="exampleFormControlSelect2" class="t1">Password(required)</label>
+   <input type="password" class="form-control" formControlName="password" id="exampleFormControlSelect2" placeholder="Please choose your password">
+    <p *ngIf="signupForm.controls.password.errors  && (signupForm.controls.password.dirty || signupForm.controls.password.touched)"  class="alert alert-info">Please enter password!</p>
+  </div>
+  <button type="button" class="btn btn-dark btn-lg btn-block b1 b2" (click)="chk()">Log In</button>
+  <a class="link0" routerLink="/signUp">  Don't have a account?Sign up</a>
+</form>
+                 </div> 
+            </div>
+         </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+ </div>

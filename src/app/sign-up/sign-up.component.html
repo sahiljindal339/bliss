@@ -1,0 +1,61 @@
+ 
+   <div class="container"  >
+  <div class="row top0">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 top1">
+         <div class="container">
+            <div class="row top2">
+             
+               <div class="col-md-12 " style="padding:4vh">
+                 <h1 class="head0" >The Bliss</h1>
+                
+
+                 <form class="form0" [formGroup]="signupForm">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" formControlName="email" id="exampleFormControlInput1" placeholder="name@example.com">
+      <p *ngIf="signupForm.controls.email.errors  && (signupForm.controls.email.dirty || signupForm.controls.email.touched)" class="alert alert-info">Please enter valid email address!</p>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Contact</label>
+   <input type="text" class="form-control" minlength=10 maxlength=10 id="exampleFormControlSelect1" formControlName="phone" placeholder="Please enter your phone number">
+   <p *ngIf="signupForm.controls.phone.errors  && (signupForm.controls.phone.dirty || signupForm.controls.phone.touched)"  class="alert alert-info">Please enter valid phone number!</p>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Password</label>
+   <input type="password" class="form-control"  pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"  formControlName="password"  id="exampleFormControlSelect2" placeholder="Please choose your password">
+   <p *ngIf="signupForm.controls.password.errors  && (signupForm.controls.password.dirty || signupForm.controls.password.touched)"  class="alert alert-info">Please enter password!</p>
+  </div>
+ 
+
+
+ <div class="form-group">
+    <label for="inputAddress2">Address </label>
+    <input type="text"  formControlName="address"  class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    <p *ngIf="signupForm.controls.address.errors  && (signupForm.controls.address.dirty || signupForm.controls.address.touched)"  class="alert alert-info">Please enter address of mangalore only!</p>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" formControlName="city"  class="form-control" disabled value="Managlore" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" formControlName="state" class="form-control">
+        <option selected>None</option>
+        <option value="Karantaka">Karantaka</option>
+      </select>
+    </div>
+  </div>
+
+  
+  <button type="button" [disabled]="!signupForm.valid" class="btn btn-outline-dark btn-lg btn-block b1" (click)="move()">Get Started --></button>
+</form>
+                 </div> 
+            </div>
+         </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+ </div>

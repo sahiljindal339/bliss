@@ -1,0 +1,337 @@
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+   
+}
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+ .log2{
+   position: relative;
+   right: -18vh
+ }
+  .lo{
+    position: relative;
+    left: -2vh;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+ .l1{
+     
+    left: -4vh;
+  }
+ @media (max-width:270px) {
+   .icon{
+   display: none;
+   }
+ }
+  
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li span {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.tittle{
+  font-size: 4vh;
+  position: relative;
+  left:2vh;
+   color: white;
+
+}
+.login{
+  font-size: 2.8vh;
+}
+.button {
+  position: relative;
+  top: 2.8vh;
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vh;
+  font-weight: bold;
+  
+}
+.cat{
+  position: relative;
+  top: 3vh;
+
+}
+.cat2{
+list-style-type: none;
+  margin: 0;
+  padding: 2.8vh;
+   display: flex;
+  justify-content: space-between;
+  background-color:#f2f4f4;
+  height: 12vh;
+  
+}
+.p1{
+  height: 9vh;
+  border: none;
+  background-color: none;
+ font-style: bold;
+   font-weight: bolder;
+  font-size: 2.4vh;
+  position: relative;
+left: -2.8vh
+
+}
+.p1:hover{
+ border-bottom: .8vh solid black;
+opacity: .88;
+}
+.lbox{
+  height: 65vh;
+}
+.span{
+  font-size: 8vh;
+  text-align: left;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+}
+.span2{
+  font-size: 3vh;
+  text-align: left;
+}
+.c{
+  background-color: black;
+  border: none;
+  height: 8vh;
+  width: 24vh;
+  color: white;
+  padding: 1vh;
+    position: relative;
+top:10vh;
+}
+.imge{
+  background-image: url('https://business.libertymutualgroup.com/business-insurance/PublishingImages/Industries/LMG%20Construction%20720x330.jpg');
+  height: 60vh;
+  width:40vh; 
+  background-position:  center;
+  background-size:  cover;
+  position:relative;
+  left:3vh;
+}
+
+.imge2{
+  background-image: url('https://image.shutterstock.com/image-vector/social-network-meeting-website-scheme-600w-1281765367.jpg');
+  height: 40vh;
+  width:40vh; 
+  background-position:  center;
+  background-size:  cover;
+  position: relative;
+  left: 3vh;
+}
+.span3{
+  font-size: 5vh;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+@media only screen and (min-width: 600px) {
+   .log2{ 
+   right: -160vh
+ }
+  .size{
+   
+   right: -26vh;
+   top:112vh;
+ }
+ .p1{
+    font-size: 3.8vh;
+    font-weight: normal;
+    position: relative;
+left: 2vh
+
+  }
+  .tittle{
+  position: relative;
+  left:19vh;
+  }
+.login {
+  position: relative;
+  right: 10vh
+}
+.button{
+  position: relative;
+  right: 10vh;
+}
+.cat{
+  position: relative;
+  top: 8vh;
+
+}
+.span{
+position: relative;
+top:8vh;
+}
+.span2{
+  position: relative;
+top:8vh;
+}
+.c{
+  position: relative;
+top:17vh;
+}
+.imge{
+  position:relative;
+  left:0vh;
+  }
+  .imge2{
+  position:relative;
+  left:-5vh;
+  }
+}
+.bl1{
+  font-size:5vh;
+  border: none;
+  background: none;
+   border-bottom:solid black .35vh;
+   padding-bottom: 7vh;
+   position: relative;
+   left: -4vh;
+}
+.bl1:hover{
+  opacity: .58
+}
+.cat3{
+  position: relative;
+  top: 20vh;
+  left: 5vh;
+  
+}
+.bl2{
+  font-size: 5vh
+}
+.f1{
+  height: 30vh;
+  background-color: black;
+  position: relative;
+  top: 29vh;
+
+}
+.f2{
+  position: relative;
+  top: 7vh;
+  font-size: 5vh;
+}
+.f3{
+  position: relative;
+  top: 10vh;
+  right:0vh;
+}
+.f4{
+  position: relative;
+  left: -2vh;
+  top: 1vh;
+ 
+}
+.dl{
+  position: relative;
+  top: 28vh;
+    background-color:   #f0f3f4  ;
+}
+.dl2{
+  text-align: center;
+  font-size: 5vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.dl3{
+    background-color: black;
+  border: none;
+  height: 8vh;
+  width: 20vh;
+  color: white;
+  padding: 1vh;
+    position: relative;
+  left: 0.5vh;
+  top: 4vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.dl4{
+  position: relative;
+  left: 2vh;
+}
+.dl5{
+  height: 29vh;
+   background-color:   #f0f3f4  ;
+}
+.dl6{
+   background-color:   #f0f3f4  ;
+}
+.dl7{
+  width: 35vh;
+  position: relative;
+  left: 5vh;
+}
+.dl8{
+  position: relative;
+  width: 35vh;
+  left: 5vh;
+  
+}
+.dl9{
+  height: 70vh;
+}
+@media only screen and (min-width: 600px) {
+.dl3{
+  left:8vh;
+}
+.dl4{
+  left: 23vh;
+}
+.dl7{
+  width: 50vh;
+  position: relative;
+  left: 5vh;
+}
+.dl8{
+  position: relative;
+  width: 50vh;
+  left: 5vh;
+  top : -1vh;
+  
+}
+.dl9{
+  height: 50vh;
+}
+}
+.a1{
+  width: 20vh;
+  height: 15vh;
+}
+.a2{
+  width: 15vh;
+ 
+
+}
+ .size{
+   font-size: 2vh;
+   position: relative;
+   right: -1vh;
+   top: 2vh;
+ }

@@ -1,0 +1,153 @@
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+  <div class="modal-dialog dl" role="document">
+    <div class="modal-content">
+      <div class="modal-header dl6">
+        <h5 class="modal-title dl2" id="exampleModalLabel" *ngIf="first">Category for {{type}}</h5>
+        <h5 class="modal-title dl2" id="exampleModalLabel" *ngIf="first1">Address for Booking</h5>
+        <h5 class="modal-title dl2" id="exampleModalLabel" *ngIf="first2">Phone Number</h5>
+          <h5 class="modal-title dl2" id="exampleModalLabel" *ngIf="first3">{{t1}}</h5>
+        <button type="button"  (click)="fl()" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+         
+      <div class="modal-body dl5"  *ngIf="first">
+           <span><button class="dl3" (click)="fx1()">New Items </button></span>
+            <span><button class="dl3 dl4" (click)="fx0()">Repairs </button></span>
+      </div>
+       <div class="modal-body dl5"  *ngIf="first4">
+           <span><button class="dl3 a1" (click)="fx5()">New  Addrees</button></span>
+           
+            <span><button class="dl3 dl4 a2 a3" (click)="fx6()">None</button></span>
+      </div>
+
+       <div class="modal-body dl5 dl9"  *ngIf="first1">
+           <form class="form0" [formGroup]="signupForm">
+     <div class="form-group">
+    <label for="inputAddress2">Address </label>
+    <input type="text"   formControlName="address"  class="form-control" id="exampleFormControlTextarea1" placeholder="Apartment, studio, or floor">
+    <p *ngIf="signupForm.controls.address.errors  && (signupForm.controls.address.dirty || signupForm.controls.address.touched)"  class="alert alert-info">Please enter address of mangalore only!</p>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" formControlName="city"  class="form-control" disabled value="Managlore" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" formControlName="state" class="form-control">
+        <option selected>None</option>
+        <option value="Karantaka">Karantaka</option>
+      </select>
+    </div>
+  </div>
+
+   
+     <span><button   [disabled]="!signupForm.valid" class="dl3  dl8" (click)="fx2()" >Next </button></span>
+           </form>
+      </div>
+
+       <div class="modal-body dl5 "  *ngIf="first2">
+           <input type="text" class="form-control" id="exampleFormControlSelect1" formControlName="phone" placeholder="Please enter your phone number" minlength=10 maxlength=10 >
+   
+     <span><button class="dl3  dl8" (click)="fx3()">Next </button></span>
+      </div>
+     
+    <div class="modal-body dl5 "  *ngIf="first3">
+           <input type="text" class="form-control" id="disc"  placeholder="Please enter  details">
+   
+     <span><button class="dl3  dl8"   (click)="fx4()">Finsih </button></span>
+     
+      </div>
+        
+    </div>
+  </div>
+</div>
+
+
+<ul class="ul">
+  <li><span class="tittle">The Bliss</span><li>
+ 
+  <li *ngIf="nav" style="float:right"><span class="login" (click)="add()">Sign up</span></li>
+  <li *ngIf="nav"   style="float:right"><button class="button login1" (click)="log()"> <i class="fa fa-user icon" style="font-size:3vh"></i> Log  in</button></li>
+  <li   *ngIf="!nav"  class="lo" style="float:right"><button class="button login1" (click)="logOut()" >    Log Out</button></li>
+   <li    *ngIf="!nav" class="lo l1" style="float:right"><button class="button login1"  > <i class="fa fa-user " style="font-size:3vh"></i> {{email}}</button></li>
+     
+</ul>
+ 
+<div class="container ">
+  <div class="row cat" >
+       <div class="col-md-1"></div>
+       <div class="col-md-10 " > <ul class="cat2 scrolling-wrapper">
+        <li ><button class="p1 card1" data-toggle="modal" data-target="#exampleModal" (click)="one()">Carpenter</button></li>
+         <li><button class="p1 card1"data-toggle="modal" data-target="#exampleModal" (click)="one1()">Electrician</button></li>
+        <li><button class="p1 card1" data-toggle="modal" data-target="#exampleModal" (click)="one2()">Wood</button></li>
+          <li><button class="p1 card1" data-toggle="modal" data-target="#exampleModal" (click)="one3()">Plumber</button></li>
+          
+          
+    </ul>
+    <div class="container ">
+      <div class="row" >
+         <div class="col-md-6 lbox">
+           <div class="container"><span class="span">
+       Services Expert in Mangalore </span>
+       <br>
+       <span class="span2">
+      Get instant access to reliable and affordable services </span>
+     <br>
+      <span><button class="c"  >Sign up</button></span>
+           </div>
+         </div>
+         <div class="col-md-6 imge">
+      </div>
+    </div>
+    </div>
+       <div class="col-md-1"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+ <div class="container ">
+      <div class="row cat"  >
+        <div class="col-md-1"></div>
+         <div class="col-md-5">
+           <div class="container">
+             <span class="span3">
+        High Quality & Trusted Professionals </span><br>
+           <span >We provide only verified, background checked and high quality professionals.We match you with the right professionals with the right budget.Super convenient, guaranteed service from booking to delivery </span>
+     <br>
+             </div>
+         </div>
+         <div class="col-md-6 imge2"></div>
+      </div>
+      </div>
+<div class="container ">
+  <div class="row cat cat3" >
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <button class="bl1" (click)="add2()">Sign up to work......</button>
+    </div>
+    
+    <div class="col-md-6">
+       <button class="bl1 bl2"(click)="add()" >Sign up for service....</button>
+    </div>
+     <div class="col-md-1"></div>
+  </div>
+</div>
+<div class="f1">
+  <span class="tittle f2">The Bliss</span>
+  <ul class="ul f3">
+  <li style="float:right"><span class="login">(+91)7009526256</span></li>
+  <li style="float:right"><button class="button login1">Contact No. </button></li>
+   <li style="float:right" class="f4"><span class="login">Mangalore</span></li>
+
+</ul>
+<div>
+
+
+

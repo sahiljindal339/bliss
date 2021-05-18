@@ -1,0 +1,63 @@
+ <ul class="ul">
+  <li><span class="tittle"  [routerLink]="['/']">The Bliss</span><li>
+  
+   
+  <li style="float:right"><button class="button w1"  (click)="logOut()" >Log  out</button></li>
+
+</ul>
+  <div class="container-fluid">
+     <div class="row">
+     <div class="col-md-2">
+       <div class="btn-group-vertical">
+          <button type="button"  (click)="add()" style='margin-top:4vh' class="btn btn-outline-info sp">Add </button>
+          <button type="button"  style='margin-top:4vh' class="btn btn-outline-info sp">Assign</button>
+          <button type="button"   style='margin-top:4vh' class="btn btn-outline-info sp">Pending</button>
+</div> </div>
+      <div class="col-md-10" >
+        
+        
+         <table class="table table-striped t1">
+  <thead>
+    <tr>
+      
+      <th scope="col">Type</th>
+      <th scope="col">Discription</th>
+      <th   scope="col">Address</th>
+       <th   scope="col">Contatct Number</th>
+        <th   scope="col">Worker Type</th>
+        <th   scope="col">Assign To</th>
+         <th   scope="col">Submit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let w of admin ; let i = index">
+      <td  >{{w.type}}</td>
+      <td  >{{w.Discription}}</td>
+        <td  >{{w.Address}}</td>
+          <td  >{{w.Contact}}</td>
+           <td  ><select   (change)="modo($event.target.value)" >
+                <option value="" disabled selected>select an option</option>
+      <option>Plumber</option>
+      <option>Electrician</option>
+      <option>Carpenter</option>
+      <option>Wood</option>
+      
+    </select></td>
+       <td  > 
+            <select [(ngModel)]="yourOption" id="category">
+       <option value="" disabled selected>select an option</option>
+       <option *ngFor="let w of worker  "> {{w}}</option>
+     </select>
+
+       </td>
+        <td  > <button type="button" (click)="accept(w)" class="btn btn-info yes"> <i class="fa fa-check-circle" style="font-size:3vh"></i> </button></td>
+    </tr>
+     
+  </tbody>
+</table>
+
+
+ 
+      </div>
+     </div>
+  </div>

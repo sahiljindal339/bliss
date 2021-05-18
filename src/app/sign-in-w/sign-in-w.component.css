@@ -1,0 +1,18 @@
+.topl{
+  height:110vh;
+}
+.head1{
+  font-size: 3.19vh;
+  position: relative;
+  right: -6vh;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+@media only screen and (min-width: 600px) {
+.head1{
+ 
+  right: -18vh;
+}
+.topl{
+  height:110vh;
+}
+}

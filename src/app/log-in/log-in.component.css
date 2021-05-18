@@ -1,0 +1,17 @@
+.t1{
+  font-weight: bold;
+}
+.link0{
+  font-size: 2vh;
+  position: relative;
+  top: 4vh;
+}
+.b2{
+  border-radius: 1vh;
+  width: 25vh;
+  background-color: black;
+  opacity: .88;
+}
+.toplo{
+  height: 105vh;
+}

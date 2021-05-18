@@ -1,0 +1,55 @@
+<ul class="ul">
+  <li><span class="tittle"  [routerLink]="['/']">The Bliss</span><li>
+  
+   
+  <li style="float:right"><button class="button w1"  (click)="logOut()" >Log  out</button></li>
+
+</ul>
+ <div class="container-fluid">
+  <div class="row">
+     <div class="col-md-2 bar1">
+        <div class="container">
+          <div class="row">
+             <div class="col-md-12 upr">
+               <div  class="profile pos"></div> </div>
+              <div class="col-md-12 upr  "><div class="flex-container ">
+              <span> Hi {{email}} </span>
+  <div class="spl">My Trips</div>
+   
+  <div (click)="logOut()">Log Out</div>  
+</div></div>
+          </div>
+        </div>
+     </div>
+    <div class="col-md-10"> 
+    <div class="container ">
+      
+         <table class="table table-striped t1">
+  <thead>
+    <tr>
+      
+      <th scope="col">Type</th>
+      <th scope="col">Discription</th>
+      <th   scope="col">Status</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let w of list ; let i = index">
+      <td  >{{w.type}}</td>
+      <td  >{{w.Discription}}</td>
+      <td *ngIf="(w.status!='Pending')"><button type="button" (click)="accept(i,w)" class="btn btn-info yes"> <i class="fa fa-check-circle" style="font-size:3vh"></i> </button>
+       
+      <button type="button" (click)="reject(w)" class="btn btn-danger yes yes1"><i class="fa fa-times-circle" style="font-size:3vh"></i></button>
+      </td>
+      <td *ngIf="(w.status=='Pending')">{{w.Address}}</td>
+    </tr>
+     
+  </tbody>
+</table>
+   
+        
+      </div>
+    </div>
+  </div>
+ </div>
