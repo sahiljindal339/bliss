@@ -1,3 +1,1 @@
-# bliss
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/bliss)
+# [bliss](https://bliss.stackblitz.io)
