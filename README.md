@@ -1,1 +1,1 @@
-# [bliss](https://bliss.stackblitz.io)
+# [Bliss](https://bliss.stackblitz.io)
